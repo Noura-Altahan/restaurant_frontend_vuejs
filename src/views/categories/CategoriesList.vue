@@ -398,7 +398,6 @@ onMounted(() => {
                                                     id="discount"
                                                     class="form-control"
                                                     v-model="state.discount"
-                                                    @blur="v$.discount.$touch"
                                                     placeholder="Enter a discount .."
                                                 />
                                             </div>

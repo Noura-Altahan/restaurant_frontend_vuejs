@@ -7,14 +7,14 @@ const logout = async () => {
     const userStore = userDataStore();
     await axios
         .post(
-            "/auth/logout",
+            "/logout_admin",
             {},
             {
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json",
                     Authorization: userStore.token
-                        ? `Token ${userStore.token}`
+                        ? `Bearer ${userStore.token}`
                         : "none",
                 },
             }

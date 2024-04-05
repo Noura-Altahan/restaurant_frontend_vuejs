@@ -395,18 +395,12 @@ onMounted(() => {
                                                     class="form-label"
                                                     for="categoryId"
                                                     >Sub-Categories
-                                                    <span class="text-danger"
-                                                        >*</span
-                                                    ></label
-                                                >
+                                                </label>
                                                 <select
                                                     id="subcategoryId"
                                                     class="form-select"
                                                     v-model="
                                                         state.subcategoryId
-                                                    "
-                                                    @blur="
-                                                        v$.subcategoryId.$touch
                                                     "
                                                 >
                                                     <option
@@ -431,7 +425,6 @@ onMounted(() => {
                                                     id="discount"
                                                     class="form-control"
                                                     v-model="state.discount"
-                                                    @blur="v$.discount.$touch"
                                                     placeholder="Enter a discount .."
                                                 />
                                             </div>
